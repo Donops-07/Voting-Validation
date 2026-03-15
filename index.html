@@ -47,6 +47,7 @@
     const popUp = document.getElementById("popup");
     const message = document.getElementById("display");
     const firstName = document.getElementById("firstname");
+    const lastName = document.getElementById("lastname");
     const firstSex = document.getElementById("male");
     const secondSex = document.getElementById("female");
 
@@ -84,6 +85,13 @@
             message.style.color = "white";
             message.textContent = `Dear, ${firstName1} Thank you for submitting your details. You are eligible to vote!`;
         }
+
+        firstname.value = "";
+        lastname.value = "";
+        ageInput.value = "";
+        firstSex.checked = false;
+        secondSex.checked = false;
+
     };
     function closeUp() {
         popUp.style.display = "none";
