@@ -1,0 +1,173 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    gap: 50px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    background: dimgrey;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h3 {
+    font-size: 2em;
+    font-weight: 500;
+    color: blue;
+}
+
+nav {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(80, 132, 132, 0.587);
+    border-bottom: 1px solid black;
+    position: fixed;
+    top: 0;
+    color: white;
+
+}
+
+main {
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    margin-top: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 40vw;
+    height: 70vh;
+    background-color: rgba(67, 68, 70, 0.497);
+    border: 1px solid rgb(72, 66, 110);
+    border-radius: 10px;
+    box-shadow: 4px 4px 7px rgba(85, 97, 180, 0.791);
+    padding: 30px;
+    gap: 20px;
+    color: white;
+}
+
+input {
+    background: none;
+    font-weight: 300;
+    font-size: 1.5em;
+    border: none;
+    color: white;
+    outline: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding-left: 3px;
+}
+
+input::placeholder {
+    color: white;
+    opacity: 0.8;
+    font-weight: 200;
+    font-size: 1em;
+}
+
+.check {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.check input {
+    cursor: pointer;
+}
+
+button {
+    width: 100px;
+    height: 40px;
+    border: none;
+    background-color: blue;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pop-up {
+    width: 350px;
+    height: 200px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(90, 90, 243, 0.973);
+    border-radius: 15px;
+    justify-self: center;
+    justify-content: center;
+    border: 2px solid black;
+    position: fixed;
+    margin-left: 50%;
+    margin-top: 100px;
+    gap: 10px;
+    top: 40%;
+    z-index: 100;
+    transform: translate(-50%, -50%);
+    border: 1px solid rgb(72, 66, 110);
+    box-shadow: 4px 4px 7px rgba(85, 97, 180, 0.791);
+}
+
+.pop-up h2 {
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.pop-up button {
+    width: 100px;
+    height: 40px;
+    border: none;
+    background-color: white;
+    color: blue;
+    font-size: 1.2em;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.content {
+    background-color: rgba(103, 105, 108, 0.497);
+    width: 95%;
+    height: 90%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.content p {
+    font-size: 1em;
+    font-weight: 300;
+}
