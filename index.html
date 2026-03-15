@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <img src="portal.jpg" alt="">
+    <img src="portal.jpg" alt="Portal">
     <nav>
         <h1>E-Government Voting Validation</h1>
     </nav>
@@ -47,17 +47,33 @@
     const popUp = document.getElementById("popup");
     const message = document.getElementById("display");
     const firstName = document.getElementById("firstname");
+    const firstSex = document.getElementById("male");
+    const secondSex = document.getElementById("female");
+
+
 
     popUp.style.display = "none";
     function openUp() {
         const age = parseInt(ageInput.value);
         const firstName1 = firstName.value;
         popUp.style.display = "flex";
+        //checking if the first name is empty
         if (firstName1.trim() === "") {
             message.style.color = "red";
             message.textContent = 'Please enter your first name.';
             return;
         }
+
+        //checking the gender selection
+        const gender1 = firstSex.checked;
+        const gender2 = secondSex.checked;
+        if (!gender1 && !gender2) {
+            message.style.color = "red";
+            message.textContent = "Please select a gender.";
+            return;
+        }
+
+        //checking the age input
         if (isNaN(age)) {
             message.style.color = "red";
             message.textContent = ` Dear, ${firstName1} Please enter a valid age.`;
@@ -72,6 +88,7 @@
     function closeUp() {
         popUp.style.display = "none";
     };
+
 </script>
 
 </html>
